@@ -1,0 +1,3 @@
+- to test a perticular test-func `go test ./ -v -run tesFunc `
+- Golang caches the test. To avoid caching and doing real execution `go test ./ -v -run tesFunc -count=1` 
+- to check to stuct obj are equal `reflect.DeepEqual(obj1, obj2)`

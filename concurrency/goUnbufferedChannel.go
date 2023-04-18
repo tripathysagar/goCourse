@@ -2,7 +2,6 @@ package main
 
 import (
 	"fmt"
-	"time"
 )
 
 func main() {
@@ -20,9 +19,4 @@ func main() {
 		fmt.Println(result)
 	}()
 	resultch <- "foo"
-}
-
-func doSomeTask(val int) string {
-	time.Sleep(time.Second * 2)
-	return fmt.Sprintf("out of the func with result %d", val)
 }
